@@ -1,0 +1,585 @@
+/*Common css Start*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 0.8;
+    padding: 0;
+    margin: 0;
+}
+a{
+    display: inline-block;
+}
+ul,ol{
+    list-style-type: none;
+}
+a,a:hover{
+    text-decoration: none;
+}
+/*Common css End*/
+/*Navbar section Start*/
+.navbar{
+    background: red;
+}
+.navbar .nav-item{
+    margin-left: 10px;
+}
+.navbar .nav-item .nav-link{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    position: relative;
+}
+.navbar .nav-item .nav-link:hover{
+    color: #0eb0b0;
+}
+.navbar .nav-item .active{
+    color: #0eb0b0;
+}
+.navbar .nav-item .nav-link::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    height: 2px;
+    background: #ddd;
+    transition: .3s;
+    transform: scale(0);
+    -webkit-transform:;
+    -moz-transform:;
+    -ms-transform:;
+    -o-transform:;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.navbar .nav-item .nav-link:hover::after{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+/*Navbar section End*/
+/*===============banner section Start==================*/
+#banner{
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner_overly{
+    padding-top: 230px;
+    padding-bottom: 205px;
+    background: linear-gradient(to right, rgba(9, 5, 47, 0.83) , rgb(49, 29, 94, 0.80));
+}
+.banner_text h3{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 900;
+    font-family: 'Playfair Display', serif; 
+    text-transform: capitalize;  
+    position: relative;
+}
+.banner_text h3::after{
+    content: '';
+    position: absolute;
+    background: #0eb0b0;
+    height: 2px;
+    width: 100px;
+    left: 50%;
+    bottom: -27px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.banner_text p {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	line-height: 24px;
+	width: 693px;
+	margin: 0 auto;
+    padding-top: 58px;
+    padding-bottom: 53px;
+}
+.banner_text .btn_one{
+    padding: 15px;
+    border: 1px solid #00e0d0;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #00e0d0;
+    font-weight: 400;
+    font-family: 'Hammersmith One', sans-serif;
+   
+
+}
+/*===============banner section End==================*/
+
+/*===============Story section Start==================*/
+#story{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.story_text h3{
+    color: #413d4b;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif; 
+    text-transform: uppercase;
+    padding-bottom: 28px;
+}
+.story_text p{
+    color: #413d4b;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 22px;
+}
+.story_text p span{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 30px;
+}
+.story_text a{
+    padding: 15px;
+    border: 1px solid #00e0d0;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #00e0d0;
+    font-weight: 400;
+    font-family: 'Hammersmith One', sans-serif;
+   
+}
+/*===============Story section End==================*/
+
+
+/*===============video section Start==================*/
+#video{
+    background: url(../images/video_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video_overly{
+    padding-top:202px;
+    padding-bottom: 202px;
+    background: linear-gradient(to right, rgba(9, 5, 47, 0.83) , rgb(49, 29, 94, 0.80));
+
+}
+.video_item h3{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
+    text-transform: uppercase;
+
+}
+/*===============video section End==================*/
+/*===============Expertise section Start==================*/
+#expertise{
+    padding-top: 70px;
+    padding-bottom:100px ;
+}
+.expertise_text h3{
+    color: #413d4b;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif; 
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.expertise_text p{
+    color: #2f2d35;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif; 
+    position: relative;
+}
+.expertise_text p::after{
+    content: '';
+    position: absolute;
+    background: #c6c4c9;
+    height: 2px;
+    width: 100px;
+    left: 50%;
+    bottom: -18px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.expertise_item{
+    padding-top: 100px;
+}
+.expertise_item_text h3{
+    color: #413d4b;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 35px;
+    padding-bottom: 25px;
+
+}
+.expertise_item_text p {
+	font-size: 14px;
+	color: #333333;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	line-height: 22px;
+	width: 238px;
+	margin: 0 auto;
+}
+/*===============Expertise section End==================*/
+
+/*===============Team section Start==================*/
+#team{
+    background: url(../images/team.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.team_overly{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: linear-gradient(to right, rgba(9, 5, 47, 0.83) , rgb(49, 29, 94, 0.80));
+}
+.team_textt h3{
+    color: #fff;
+}
+.team_textt p{
+    color: #fff;
+}
+.team_textt p::after{
+    background: #655c80;
+}
+.teams_text{
+    border: 1px solid #76758a;
+}
+.teams_items{
+    padding-top: 100px;
+}
+.teams_text h3{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    padding-top: 22px;
+
+}
+.teams_text span{
+    color: #fafafa;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    padding-bottom: 24px;
+    padding-top: 10px;
+
+}
+.teams_bottom_text{
+    margin-top: 70px;
+}
+.teams_bottom_text p{
+    font-size: 14px;
+	color: #f3f3f3;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+    padding-bottom: 30px;
+}
+.teams_bottom_text a{
+    padding: 15px;
+    border: 1px solid #00e0d0;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #00e0d0;
+    font-weight: 400;
+    font-family: 'Hammersmith One', sans-serif;
+   
+}
+/*===============Team section End==================*/
+/*===============Works section Start==================*/
+#works{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.works_btn button{
+    background: transparent;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: #413d4b;
+    font-size: 16px;
+    cursor: pointer;
+}
+.items_imgs{
+    width: 16.6%;
+}
+
+.works_btn a{
+    padding: 15px 27px;
+    border: 1px solid #00e0d0;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #22e4d6;
+    font-weight: 400;
+    font-family: 'Hammersmith One', sans-serif;
+    margin-top: 70px;
+}
+/*===============Works section End==================*/
+
+/*===============Teacher section Start==================*/
+#teacher{
+    background: url(../images/teacher.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.teacher_overly{
+    padding-top: 115px;
+    padding-bottom: 140px;
+    background: linear-gradient(to right, rgba(9, 5, 47, 0.80) , rgb(49, 29, 94, 0.80));
+}
+.teacher_icon i{
+    color: #fff;
+    font-size: 25px;
+}
+.teacher_text p {
+	color: #ffff;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Playfair Display', serif;
+	line-height: 26px;
+	width: 744px;
+	margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 45px;
+}
+.teacher_text h3{
+    color: #ffff;
+	font-size: 14px;
+	font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+	
+}
+.teacher_text span{
+    display: block;
+    color: #ffff;
+	font-size: 13px;
+	font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+/*===============Teacher section End==================*/
+
+
+/*===============Brand section Start==================*/
+#brand{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.form_title h3{
+    font-size: 22px;
+    color: #413d4b;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 35px;
+}
+.form_group .form_contorl{
+    width: 100%;
+    height: 45px;
+    padding: 0 24px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #413d4b;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+.form_group textarea{
+    padding-top: 12px;
+    height: 198px;
+    width: 100%;
+    text-transform: capitalize;
+    color: #413d4b;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 20px;
+}
+.form_group button{
+    padding: 10px 27px;
+    border: 1px solid #00e0d0;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #22e4d6;
+    font-weight: 400;
+    font-family: 'Hammersmith One', sans-serif;
+    margin-top: 25px;
+}
+.client_title{
+    padding-bottom: 40px;
+}
+.client_title h3{
+    margin-left: 40px;
+    font-size: 22px;
+    color: #413d4b;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+.client_img{
+    margin-bottom: 40px;
+}
+/*===============Brand section End==================*/
+
+/*===============footer section Start==================*/
+#footer{
+    background: url(../images/footer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer_overly{
+    background: linear-gradient(to right, rgba(9, 5, 47, 0.80) , rgb(49, 29, 94, 0.80));
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+.footer_logo p{
+    font-size: 14px;
+    color: #ffff;
+    padding-top: 30px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    line-height: 26px;
+    width: 284px;
+}
+.our_studio h3{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+.icon i{
+    margin-right: 20px;
+    font-size: 20px;
+}
+.icon_text h4{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+
+}
+.icon_text span{
+    display: block;
+    padding-bottom: 15px;
+}
+.icon2 a{
+    margin-right: 20px;
+}
+.icon2 i{
+    font-size: 20px;
+}
+.icon3 h5{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 5px;
+}
+.touch_part h3{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    padding-top: 15px;
+
+}
+.touch_part input {
+	padding: 15px 10px 9px 10px;
+	border: 1px solid #ddd;
+	background: transparent;
+	color: #ffff;
+}
+.touch_part button{
+    padding: 10px 30px 10px 30px;
+    margin-left: 20px;
+    border: none;
+    background: rgba(159, 151, 177, 0.609);
+}
+.touch_part button i{
+    font-size: 30px;
+    color: #fff;
+    
+}
+
+
+
+
+
+
+.socail ul{
+    margin-top: 27px;
+}
+.socail ul li{
+    display: inline-block;
+}
+.socail ul li a{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    margin-right: 10px;
+}
+.socket_one h5{
+    color: #ffff;
+    padding-top: 80px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+
+}
+.socket_one a{
+    padding-left: 10px;
+    color: #fff;
+}
+.socket_two h5{
+    color: #ffff;
+    padding-top: 80px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+/*===============footer section End==================*/
